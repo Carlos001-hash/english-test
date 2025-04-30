@@ -24,13 +24,6 @@ export default function PageOne() {
           style={{ position: "absolute", top: "20px" }}
           className=" border-2 border-gray-50/40 w-1/3 h-1/4  -z-20 bg-gray-300 blur-xs rounded-full "
         />
-
-        <motion.div
-          animate={{ x: [100, 50, 100], width: ["40%", "50%", "40%", "50%", "40%"] }}
-          transition={{  duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          style={{ position: "absolute", top: "300px", bottom: "300px" }}
-          className=" border-2 border-gray-50/40 w-1/3 h-1/4  -z-20 bg-gray-300 blur-xs rounded-full "
-        />
         
         <motion.div
           animate={{ x: [0, 200, 0], width: ["40%", "50%", "40%", "50%", "40%"] }}
