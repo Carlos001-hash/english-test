@@ -8,8 +8,6 @@ import { useState } from "react";
 export default function PageOne() {
   const [id, setId] = useState(1);
   const [numBub, setNumBub] = useState(0)
-  const [dica, setDica] = useState(false)
-  const [text, setText] = useState<React.ReactElement[]>([]);
 
 
   const handleBubble = () => {
