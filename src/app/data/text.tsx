@@ -1,6 +1,5 @@
 "use client"
 
-import { button } from "framer-motion/client";
 import { Text, Bubble } from "./textFit";
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -142,7 +141,7 @@ export const ShowBubble = ({ bubble }: { bubble: Bubble }) =>  {
                     </div>
                     <div className="flex w-full h-12 flex-row-reverse justify-center items-center">
                     <button className="min-w-9 h-9 border border-green-200 rounded-full bg-gray-100 hover:bg-gray-50 mr-2"
-                        onClick={() => {setDica(!dica)}}>?</button>
+                        onClick={() => {setDica(!dica); setNumBub(numBub)}}>?</button>
                     <div className="w-full flex flex-row-reverse justify-baseline items-center pr-3">
                         {dica && <p className="text-shadow font-semibold">{bubble.two[numBub]}</p>}
                     </div>
